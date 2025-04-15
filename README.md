@@ -9,6 +9,7 @@ This project focuses on classifying EEG signals for insomnia detection using a h
 Manual interpretation of PSG data is time-consuming and resource-intensive (Iber et al., 2007). EEG-based analysis offers a more scalable solution, especially when paired with deep learning. Prior work (Casson, 2019; Biswal et al., 2018; Arnulf, 2012) has shown machine learning's potential in sleep classification and disorder detection. This study leverages EEG signals to build an efficient model for automated insomnia detection.
 
 ## Dataset & Preprocessing
+
 - Dataset: Sleep-EDF Expanded Database.
 - Sampling Rate: 100 Hz.
 - Processing:
@@ -16,6 +17,7 @@ Manual interpretation of PSG data is time-consuming and resource-intensive (Iber
     - Signals stored in .npy format under normal/ and insomnia/ directories.
 
 ## Feature Extraction
+
 **a. Spectrogram Branch (CNN):**
 
 - Spectrograms generated using STFT.
@@ -73,3 +75,10 @@ Manual interpretation of PSG data is time-consuming and resource-intensive (Iber
 
 ## Conclusion
 This hybrid model efficiently classifies EEG signals into normal and insomnia categories using a dual-branch architecture. The integration of spectrogram and band power features enhances accuracy, while structured pruning makes the model suitable for resource-constrained environments. This pipeline has potential applications in real-time sleep monitoring and diagnostic tools.
+
+## References
+Casson, A. J. (2019). Wearable EEG and beyond. Biomedical Engineering Letters, 9, 53–71. https://doi.org/10.1007/s13534-018-00093-6
+
+Biswal, S., Sun, H., Goparaju, B., Westover, M. B., Sun, J., & Bianchi, M. T. (2018). Expert-level sleep scoring with deep neural networks. Journal of the American Medical
+
+Arnulf, I. (2012). REM sleep behavior disorder: Motor manifestations and pathophysiology. Movement Disorders, 27(6), 677-689. https://doi.org/10.1002/mds.24957
